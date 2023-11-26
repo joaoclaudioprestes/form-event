@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie seu evento</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>Crie e compartilhe seu evento</h1>
+            <p>O primeiro passo, é preencher esse formulário de incrição.</p>
+        </header>
+
+
+        <form action="" method="">
+
+            <fieldset>
+                <div class="fildset-wrapper">
+                    <legend>Informações do Evento</legend>
+                    <div class="input-wrapper">
+                        <label for="event-title">Título do evento<span>(mínimo 8 caracteres)</span></label>
+                        <input type="text" name="event-title" id="event-title">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="event-url">Link do evento<span>(comece com https://)</span></label>
+                        <input type="url" name="event-url" id="event-url">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="event-whatsapp">Whatsapp para contato<span>(somente números)</span></label>
+                        <input type="tel" name="event-whatsapp" id="event-whatsapp">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="event-info-extra">Informações extras</label>
+                        <textarea id="event-info-extra"></textarea>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="event-category">Categoria</label>
+                        <select name="event-category" id="event-category">
+                            <option value="live">Ao vivo</option>
+                            <option value="podcast">Podcast</option>
+                            <option value="mentorship">Mentoria</option>
+                        </select>
+                </div>
+            </fieldset>
+
+            <fieldset class="info">
+                <div class="fildset-wrapper">
+                    <legend>Privacidade</legend>
+
+                    <div class="input-wrapper">
+                        <label for="event-email">E-mail do administrador<span>(digite um e-mail válido)</span></label>
+                        <input type="email" name="event-email" id="event-email">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="event-password">Senha de acesso para os participantes<span>(mínimo 8 caracteres)</span></label>
+                        <input type="password" name="event-password" id="event-password">
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <label for="event-private">Evento privado</label>
+                        <input type="checkbox" id="event-private">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="info">
+                <div class="fildset-wrapper">
+                    <legend>Dia e Hora</legend>
+
+                    <div class="tree-col">
+                        <div class="input-wrapper">
+                            <label for="event-date">Data</label>
+                            <input type="date" id="event-date">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="event-begin">Das</label>
+                            <input type="time" id="event-begin">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="event-end">Até</label>
+                            <input type="time" id="event-end">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+</body>
+
+</html>
